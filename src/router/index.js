@@ -14,11 +14,23 @@ import Lead from '../components/lead.vue'
 import Login from '../components/login.vue'
 import HjhMUsic from '../components/hjhMUsic.vue'
 import Hjhplayer from '../components/hjhplayer.vue'
+import Rightpage from '../pages/rightpage/rightpage'
+import Special from '../pages/special/special'
 
 Vue.use(Router)
 
 let router=new Router({
   routes: [
+    {
+      path: '/special',
+      name: 'Special',
+      component: Special
+    },
+    {
+      path: '/rightpage',
+      name: 'Rightpage',
+      component: Rightpage
+    },
     {
       path: '/hjhMUsic',
       name: 'HjhMUsic',
@@ -109,5 +121,5 @@ let router=new Router({
     },
   ]
 })
-router.push('all');
+router.push('start');
 export default router;

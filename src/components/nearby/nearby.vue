@@ -3,7 +3,7 @@
    <div class="head">
          <ul class="kl">
              <li class="list">
-                 <router-link style="border:none" to=""><img src="../../img/关注_slices/nav-icon01@2x.png"></router-link>
+                 <router-link style="border:none" to="/My"><img src="../../img/关注_slices/nav-icon01@2x.png"></router-link>
 
                  <router-link to="/attention" class="guan">关注</router-link>
                  </li>
@@ -148,6 +148,7 @@ html,body{
     height: 100%;
     // overflow:hidden;  
      background: url("./../../img/login.jpg") !important;
+     overflow: hidden;
      }
     .head{
      
@@ -156,6 +157,7 @@ html,body{
         padding-top: .40rem;
         margin: 0 auto;
         position: relative;
+        margin-top: .32rem;
         .icon{
           // display: none;
             width: .48rem;
@@ -173,7 +175,7 @@ html,body{
         margin-bottom: .40rem;
         li{
             flex: 1;
-            font-size: .4rem;
+            font-size: .32rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -209,6 +211,11 @@ html,body{
           
               }
               }
+              }
+              .bt-kl{
+                // overflow: hidden;
+                // padding-top: 1rem;
+                // height: 5rem;
               }
               .lk{
             width: 2rem;

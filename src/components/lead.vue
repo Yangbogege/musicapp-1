@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="lead">
     <div class="swiper-container">
       <div class="swiper-wrapper" lead-box>
         <div class="swiper-slide" lead-boxs>
@@ -31,7 +31,7 @@
       <!-- <div class="swiper-pagination dian" ></div> -->
     </div>
     <div class="jtou">
-      <img src="../assets/img/zyb-img/img/Jtou.png" alt class="jtou-img">
+      <router-link to="/hjhMUsic"><img src="../assets/img/zyb-img/img/Jtou.png" alt class="jtou-img"></router-link>
     </div>
   </div>
 </template>
@@ -52,7 +52,6 @@ export default {
     mySwiper() {
       let mySwiper = new Swiper(".swiper-container", {
         direction: "horizontal",
-
         pagination: {
           el: ".swiper-pagination"
         }
@@ -65,13 +64,15 @@ export default {
 </script>
 
 <style scoped>
-/* @import "../../node_modules/swiper/dist/css/swiper.min.css"; */
+@import "../../node_modules/swiper/dist/css/swiper.min.css";
 * {
   margin: 0;
   padding: 0;
   height: 100%;
 }
-
+.lead{
+  background: black;
+}
 .lead-boxs {
   width: 100%;
   height: 100%;

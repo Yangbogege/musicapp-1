@@ -1,16 +1,16 @@
 <template>
    <div class="big">
      <div class="head">
-         <ul>
-             <li>
-                 <router-link style="border:none" to="/My"><img src="../../img/关注_slices/nav-icon01@2x.png"></router-link>
+            <ul>
+                <li>
+                    <router-link style="border:none" to="/My"><img src="../../img/关注_slices/nav-icon01@2x.png"></router-link>
 
-                 <router-link to="/attention" class="guan">关注</router-link>
-                 </li>
-           <li>
-               <router-link to="/nearby" class="fu">附近</router-link>
+                    <router-link to="/attention" class="guan">关注</router-link>
+                </li>
+                <li>
+                    <router-link to="/nearby" class="fu">附近</router-link>
 
-                <router-link style="border:none" to=""><img src="../../img/关注_slices/nav-icon02@2x.png"></router-link>
+                    <router-link style="border:none" to=""><img src="../../img/关注_slices/nav-icon02@2x.png"></router-link>
                </li>
          </ul>
          <img class="icon" src="../../img/关注_slices/nav-icon03@2x.png">
@@ -147,13 +147,14 @@ html,body{
     // background: black;
     // background-size: 100% 100%;
     position: relative;
-    ;
+    overflow: hidden;
     .head{
         width: 90%;
         height: 1.45rem;
         padding-top: .40rem;
         margin: 0 auto;
         position: relative;
+        margin-top: .35rem;
         .icon{
             width: .48rem;
             height: .48rem;
@@ -169,7 +170,7 @@ html,body{
         align-items: center;
         li{
             flex: 1;
-            font-size: .4rem;
+            font-size: .32rem;
             display: flex;
             justify-content: space-between;
             align-items: center;

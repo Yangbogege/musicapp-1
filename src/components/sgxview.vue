@@ -1,12 +1,12 @@
 <template>
   <!-- <div style="background:black"> -->
-  <div style="background: url(../../static/sgxLeaderboard/imgs/bgc.jpg) no-repeat">
+  <div style="background: url(../../static/sgxLeaderboard/imgs/bgc.jpg) no-repeat" class="all">
     <header>
-      <a href="#">
+      <router-link to="/hjhMUsic">
         <span>
           <img src="../../static/sgxLeaderboard/imgs/right_icon@2x.png@2x.png" alt>
         </span>
-      </a>
+      </router-link>
       <span>电台</span>
       <a href="#">
         <span>
@@ -94,18 +94,17 @@ export default {
   margin: 0;
   padding: 0;
 }
+
 ul{
   list-style: none;
   margin:0;
   padding: 0;
 }
-html,
-body {
-  width: 100%;
-  height: 100%;
-  background-size: 100% 100%;
+.all{
+  overflow: hidden;
 }
 header {
+  margin-top: .5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -127,6 +126,8 @@ header {
   }
 }
 .nav {
+  height: 100%;
+  padding-bottom: .3rem;
   ul {
     margin-top: 0.74rem;
     width: 100%;

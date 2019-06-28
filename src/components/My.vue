@@ -2,15 +2,15 @@
   <div class="My">
       <ul class="top">
           <li><span class="a" @click="test"></span></li>
-          <li><a href="" id="wode_1">我的</a></li>
-          <li><a href="">音乐</a></li>
-          <li><a href="">发现</a></li>
+          <li><div id="wode_1"><a href="#">我的</a></div></li>
+          <li><router-link to="/hjhMUsic">音乐</router-link></li>
+          <li><router-link to="/attention">发现</router-link></li>
           <li><span class="b"></span></li>
       </ul>
 
       <div class="yonghu">
           <div>
-              <img src="./../assets/My/my-img01.png" alt="" class="touxiang">
+              <router-link to="/login"><img src="./../assets/My/my-img01.png" alt="" class="touxiang"></router-link>
           </div>
           <span class='text'>Queen</span>
       </div>
@@ -41,19 +41,19 @@
         <div class="love">
             <ul>
                 <li>
-                    <a href="">
+                    <a href="#">
                         <span class="love_icon_01"></span>
                         <p>本地音乐</p> 
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <router-link to="/happysing">
                         <span class="love_icon_02"></span>
                         <p>乐唱音乐</p> 
-                    </a>
+                    </router-link>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="#">
                         <span class="love_icon_03"></span>
                         <p>我喜欢的</p> 
                     </a>
@@ -118,6 +118,7 @@ export default {
 <style scoped lang='less'>
 
     .My{
+        min-height: 100%;
         overflow: hidden;
         background: black;
         text-align: center;
@@ -135,6 +136,7 @@ export default {
             background:linear-gradient(90deg,rgba(246,105,52,1) 0%, rgba(255,41,97,1) 100%);
             -webkit-background-clip:text;
             -webkit-text-fill-color:transparent;
+            font-weight: 600;
             border-bottom: .02rem solid rgba(255,41,97,1);
             // border-image: -webkit-linear-gradient(rgba(246,105,52,1), rgba(255,41,97,1) ) 20 20;
             // border-image: linear-gradient(rgba(246,105,52,1), rgba(255,41,97,1)) 20 20;
@@ -143,19 +145,30 @@ export default {
             color: #fafafa;
         }
         .cebian{
-            transition: margin-left 1s;
+            transition: all 1s;
             margin-left: -12rem;
+            position: relative;
+            z-index: 99999;
         }
         .act{
+            transition: all 1s;
             margin-left: 0;
             transition: margin-left 1s;
         }
         .top{
             display: flex;
-            margin-top: .32rem;
+            margin-top: .62rem;
             li{
                 flex: 1;
                 text-align: center;
+                font-size: .32rem;
+                height: .7rem;
+                line-height: .5rem;
+                div{
+                    margin: 0 auto;
+                    height: 100%;
+                    width: .66rem;
+                }
                 .a {
                     display: block;
                     width: .3rem;
@@ -164,6 +177,7 @@ export default {
                     background-size: cover;
                     margin-top: .1rem;
                     margin-left: .3rem;
+                    text-decoration: none;
                 }
                 .b{
                     display: block;
@@ -268,6 +282,7 @@ export default {
             margin-top: .65rem;
             ul{
                 overflow: hidden;
+                margin-bottom: 1rem;
                 li{
                     margin-top: .24rem;
                     float: left;

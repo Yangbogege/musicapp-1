@@ -4,7 +4,7 @@
     <div class="top">
       <div class="tu"><img src="../assets/img/search/icon1.png" width="100%"></div>
       <input type="text" placeholder="搜索音乐你、歌单、歌词" v-model="text">
-      <span><a href="">取消</a></span>
+      <span><router-link to="/hjhMUsic">取消</router-link></span>
     </div> 
     <div class="lunb">
       <img src="../assets/img/search/pic3.png">

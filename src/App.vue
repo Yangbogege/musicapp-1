@@ -22,8 +22,10 @@ export default {
   mounted() {
     setRem.rem();
     window.onresize = setRem.rem;
-
-    // this.$router.push("./home");
+    setTimeout(() => {
+      this.$router.push("lead");
+      
+    }, 2000);
    
   }
 };
@@ -32,16 +34,11 @@ export default {
 <style lang="less" scoped>
 @import url('./../static/reset.css');
 #app{
-  height: 100%;
+  // min-height: 100%;
+  height:100%;
 }
 html,body{
   background: black;
   color: #fff;
-}
-
-  
-*{
-  font-size:0;
-  height: 100%;
-}
+}  
 </style>

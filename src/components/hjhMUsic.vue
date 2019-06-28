@@ -2,19 +2,19 @@
   <div class="hjhmine">
     <div class="zhuangtai"></div>
     <div class="hheadnav">
-      <a href="#" class="hsong"></a>
+      <router-link  class="hsong" to="/rightpage"></router-link>
       <ul>
         <li>
-          <a href="#">我的</a>
+          <router-link to="/my">我的</router-link>
         </li>
         <li>
           <a href="#">音乐</a>
         </li>
         <li>
-          <a href="#">发现</a>
+          <router-link to="/attention">发现</router-link>
         </li>
       </ul>
-      <a  href="#" class="hsearch"></a>
+      <router-link to="/search" class="hsearch"></router-link>
     </div>
     <div class="hbanner">
       <div class="swiper-container">
@@ -36,22 +36,22 @@
         </a>
       </li>
       <li>
-        <a href="#">
+        <router-link to="/sgxLeaderboard">
           <img src="./../assets/mymusic/home-icon-4.png@3x.png">
           <span>排行</span>
-        </a>
+       </router-link>
       </li>
       <li>
-        <a href="#">
+        <router-link to="/special">
           <img src="./../assets/mymusic/home-icon-5.png@3x.png">
           <span>专辑</span>
-        </a>
+        </router-link>
       </li>
       <li>
-        <a href="#">
+        <router-link to="/sgxview">
           <img src="./../assets/mymusic/home-icon-6.png@3x.png">
           <span>电台</span>
-        </a>
+        </router-link>
       </li>
       <li>
         <a href="#">

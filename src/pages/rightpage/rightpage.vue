@@ -1,7 +1,7 @@
 <template>
   <div class="box">
     <div class="top">
-      <span><</span>听歌识曲
+      <span><router-link to="/hjhMUsic"><</router-link></span>听歌识曲
     </div>
     <div class="discern">
       <a href="#">识别音乐</a>
@@ -62,6 +62,7 @@
     color: white;
     background: url("./img/bg.jpg");
     background-size: 100% 100%;
+    z-index: 9999;
     .top{
       width: 100%;
       height: .88rem;
@@ -69,11 +70,15 @@
       text-align: center;
       font-size: .36rem;
       overflow: hidden;
+      margin-top: .5rem;
       span{
         position: absolute;
         left: .34rem;
         width: .32rem;
         height: .32rem;
+        a{
+          color: white;
+        }
       }
     }
     .discern{
@@ -112,6 +117,7 @@
         position: absolute;
         left: 1.63rem;
         top: -.25rem;
+        animation: turn 2s 0s ease-in-out infinite;
       }
       img:nth-child(3){
         width: .56rem;
@@ -119,6 +125,7 @@
         position: absolute;
         left: 3.48rem;
         top: 1.27rem;
+        animation: turn 2s .5s ease-in-out infinite;
       }
       img:nth-child(4){
         width: .56rem;
@@ -126,6 +133,18 @@
         position: absolute;
         left: 5.29rem;
         top: .23rem;
+        animation: turn 2s 1s ease-in-out infinite;
+      }
+      @keyframes turn {
+        0%{
+          transform: scale(1)
+        }
+        50%{
+          transform: scale(2)
+        }
+        100%{
+          transform: scale(1)
+        }
       }
     }
     .sport{
@@ -159,6 +178,7 @@
           z-index: 2;
           margin-top: 1.1rem;
           img{
+            margin-top: .3rem;
             width: .6rem;
             height: .88rem;
             vertical-align: middle;

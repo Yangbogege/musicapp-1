@@ -66,6 +66,7 @@ export default {
         background: url('./../assets/sidebar/beijing.png') center center no-repeat;
         background-size: cover;
         position: absolute;
+        z-index: 9999;
         top: 0rem;
         p{
             margin-bottom: 0rem;
@@ -82,8 +83,13 @@ export default {
             ul{
                 overflow: hidden;
                 list-style: none;
+                padding-left: .8rem;
                 li{
+                    p{
+                        font-size: .3rem;
+                    }
                     float: left;
+                    line-height: .5rem;
                 }
             }
             
@@ -115,12 +121,13 @@ export default {
             height: 11.76rem;
             background: rgba(0,0,0,.7);
             float: right;
-            margin-top: -.3rem;
+            margin-top: .04rem;
             z-index: 3;
         }
 
         .text{
-            margin-top: 7.4rem;
+            position: absolute;
+            bottom: .8rem;
             width: 6rem;
             .title_{
                 font-size: .5rem;

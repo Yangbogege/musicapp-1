@@ -1,18 +1,18 @@
 <template>
   <!-- <div style="background:black"> -->
-  <div style='background:url(../../static/sgxLeaderboard/imgs/bgc.jpg)'>
+  <div style='background:url(../../static/sgxLeaderboard/imgs/bgc.jpg)' class="all">
     <header>
-      <a href="">
+      <router-link to="/hjhMUsic">
       <span>
         <img src="../../static/sgxLeaderboard/img/ranked-icon-1.png@2x.png" alt>
       </span>
-      </a>
+      </router-link>
       <span>排行榜</span>
-      <a href="">
+      <router-link to="/search">
       <span>
         <img src="../../static/sgxLeaderboard/img/ranked-icon-2.png@2x.png" alt>
       </span>
-      </a>
+      </router-link>
     </header>
     <div class="nav">
       <ul>
@@ -128,12 +128,17 @@ body {
   width: 100%;
   height: 100%;
 }
+.all{
+  min-height: 100%;
+  overflow: hidden;
+}
 ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 header {
+  margin-top: .5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;

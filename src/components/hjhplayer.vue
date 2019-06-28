@@ -2,7 +2,7 @@
   <div class="hjhplay">
     <div class="zhuangtai"></div>
     <div class="hplaynav">
-      <span class="hback"></span>
+      <router-link to="/hjhMUsic"><span class="hback"></span></router-link>
       <span class="hsongname" >{{songname}}</span>
       <span class="hsonglist"></span>
     </div>
@@ -210,10 +210,12 @@ export default {
 
 <style scoped lang="less">
 .hjhplay {
-  // height: 100%;
+  min-height: 100%;
   color: #fff;
   overflow: auto;
   display: flex;
+  position: relative;
+  z-index: 9999;
   flex-direction: column;
   justify-content: space-between;
 

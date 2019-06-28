@@ -2,7 +2,7 @@
   <div class="happy">
     <div class="top">
       <div class="all">
-        <div class="one"><img src="../assets/img/happysing/banner.icon1@2x.png@3x.png" width="100%"></div>
+        <div class="one"><router-link to="/my"><img src="../assets/img/happysing/banner.icon1@2x.png@3x.png" width="100%"></router-link></div>
         <div class="two"><img src="../assets/img/happysing/icon2.png" width="100%"></div>
         <div class="three"><img src="../assets/img/happysing/icon3.png" width="100%"></div>
         <div class="tou"><div></div></div>
@@ -184,13 +184,13 @@ export default {
       line-height: .53rem;
       background: linear-gradient(right,rgb(241,95,57),rgb(254,44,95));
       border-radius: .36rem;
-      border: 10px solid transparent;
+      border: .1rem solid transparent;
     }
     .aaa{
-      border-right:10px solid rgba(110, 58, 58, 0.425);
-      border-bottom:10px solid rgba(110, 58, 58, 0.425);
-      border-top:10px solid rgba(248, 122, 122, 0.425);
-      border-left:10px solid rgba(248, 122, 122, 0.425);
+      border-right:.1rem solid rgba(110, 58, 58, 0.425);
+      border-bottom:.1rem solid rgba(110, 58, 58, 0.425);
+      border-top:.1rem solid rgba(248, 122, 122, 0.425);
+      border-left:.1rem solid rgba(248, 122, 122, 0.425);
       font-size: .25rem;
     }
     .bottom{
@@ -287,7 +287,7 @@ export default {
         padding: 0 .3rem;
       }
       .allp{
-        margin-bottom: .5rem;
+        margin-bottom: 1.2rem;
         .listt{
           font-size: .25rem;
         color:rgb(148,148,148);

@@ -5,8 +5,8 @@
       </div>
       <div class="menu">
           <ul>
-            <li @click='red' :class="{'redjb':redjb}">登录</li>
-            <li @click='red' :class="{'redjb':!redjb}">注册</li>
+            <li @click='red=true' :class="{'redjb':red}">登录</li>
+            <li @click='red=false' :class="{'redjb':!red}">注册</li>
           </ul>
           <div class="num">
               <h4>账号</h4>
@@ -19,7 +19,8 @@
               </div>
           </div>
           <div class="dl">
-              <a href="#" class=dl-a><img src="../assets/img/zyb-img/login/icon@2x.png@2x.png" alt="" class="dl-img"></a>
+              <router-link to="/my" class='dl-a'><img src="../assets/img/zyb-img/login/icon@2x.png@2x.png" alt="" class="dl-img"></router-link>
+              <a href="#"></a>
           </div>
           <div class="foot">
               <p class="foot-sp">第三方登录</p>
@@ -43,7 +44,8 @@ export default {
   data() {
     return {
         active:false,
-        redjb:false
+        redjb:false,
+        red:true
     }
   },
   methods: {
@@ -78,11 +80,12 @@ h4{
     margin:0;
 }
 .login{
+    overflow: hidden;
     background: url('../assets/img/zyb-img/img/登录页.jpg') no-repeat;
     padding: 0.58rem 0 0.59rem 0;
     box-sizing: border-box;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
 }
 .logo{
     margin: 1.02rem 2.8rem;
@@ -111,8 +114,8 @@ h4{
     text-decoration: none;
     color: white;
 }
-.menu ul li .redjb{
-    border-bottom: solid 0.02rem transparent;
+.menu ul .redjb{
+    border-bottom: solid 0.05rem transparent;
     border-image:   linear-gradient(to right,rgba(246,105,52,1),rgba(255,36,101,1)) 1 10;
 }
 .num{

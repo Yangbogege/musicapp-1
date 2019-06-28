@@ -1,7 +1,7 @@
 <template>
     <div class="box">
       <div class="top">
-        <span><img src="./img/icon-1.png.png"></span>专辑
+        <span><router-link to="/hjhMUsic"><img src="./img/icon-1.png.png"></router-link></span>专辑
       </div>
       <div class="photo">
         <img src="./img/img-banner-1.png.png">
@@ -105,7 +105,7 @@
   }
   .box{
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     position: fixed;
     color: white;
     background: url("./img/bg.jpg");
